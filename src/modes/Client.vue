@@ -52,6 +52,26 @@
         </div>
       </template>
 
+      <template #header-static>
+        <thead class="my-static-header">
+          <tr>
+            <th colspan="3" rowspan="2"></th>
+            <th colspan="4">member info</th>
+            <th colspan="3">indicator</th>
+            <th rowspan="2"></th>
+          </tr>
+          <tr>
+            <th>name</th>
+            <th>team</th>
+            <th>number</th>
+            <th>position</th>
+            <th>height</th>
+            <th>weight</th>
+            <th>country</th>
+          </tr>
+        </thead>
+      </template>
+
       <template #header-name="header">
         <div class="filter-column">
           <span
@@ -297,6 +317,12 @@ const updateRowsPerPageSelect = (e: Event) => {
 }
 .slider {
   flex-grow: 1;
+}
+
+.my-static-header th {
+  color: white;
+  border-right: 1px solid #445269;
+  border-bottom: 1px solid #445269;
 }
 </style>
 
